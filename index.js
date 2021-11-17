@@ -133,9 +133,9 @@ nopref = false
 numbernye = '0'
 autoketik = false;
 prefixStatus = true;
-targetpc = "51923568749"; 
-owner = "51923568749"; 
-fakeyoi = "Confu"; 
+targetpc = "50377000817"; 
+owner = "50377000817"; 
+fakeyoi = "robert503"; 
 HunterApi = "Ikyy69", 
 xchillds = 'XChillDs' 
 hardi = 'hardianto', 
@@ -613,7 +613,7 @@ const fstick = {
 const fvid = {
 	 key: { 
           fromMe: false,
-	      participant: `51923568749@s.whatsapp.net`, ...(from ? 
+	      participant: `50377000817@s.whatsapp.net`, ...(from ? 
 	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
                 },
 	 message: { 
@@ -786,11 +786,11 @@ if (!itsMe && !isOwner)return
               mimetype: "image/jpeg",
               jpegThumbnail: fs.readFileSync(`./stik/thumb.jpeg`),
             },
-            title: "ConfuBot4",
+            title: "Siesta_Bot",
             description: "Bot24/7",
             currencyCode: "USD",
             priceAmount1000: "2000",
-            retailerId: "By ConfuMods",
+            retailerId: "By Robert503",
             productImageCount: 1,
           },
           businessOwnerJid: `0@s.whatsapp.net`,
@@ -933,7 +933,7 @@ const reply = (teks) => {
              cnf.relayWAMessage(res)
         }
 const fakewa = (teks) => {        
-cnf.sendMessage(from, teks, text, { thumbnail: fake, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `ConfuBot4`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/51923568749?text=hola%20confu`}}})
+cnf.sendMessage(from, teks, text, { thumbnail: fake, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `Siesta_Bot`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/50377000817?text=hola%20robert`}}})
 		}
 const replyfakelink = (teks) => {
 cnf.sendMessage(from, teks, text,{contextInfo :{text: 'Hola',
@@ -941,7 +941,7 @@ cnf.sendMessage(from, teks, text,{contextInfo :{text: 'Hola',
 isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
-                "title": `ConfuBot4\n•Instagram (@confumods)`,
+                "title": `Siesta_Bot\n•Instagram (@confumods)`,
                 "body": "",
                 "previewType": "PHOTO",
                 "thumbnailUrl": "https://i.ibb.co/QJRWXb9/IMG-20211107-WA0044.jpg",
@@ -956,12 +956,12 @@ isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
                 "title": `WhatsApp`,
-                "body": `wa.me/51923568749`,
+                "body": `wa.me/50377000817`,
                 "mediaType": "10",
-                "mediaUrl": `wa.me/51923568749`,
+                "mediaUrl": `wa.me/50377000817`,
                 "thumbnailUrl": "https://i.ibb.co/QJRWXb9/IMG-20211107-WA0044.jpg",
                 "thumbnail": iye,
-                "sourceUrl": `wa.me/51923568749`,
+                "sourceUrl": `wa.me/50377000817`,
 },mentionedJid:[sender]}, quoted : mek})
 };
 const fakeyt = (teks) => {
@@ -1154,7 +1154,15 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
     };
     
     if (isGroup && isAntilink && !mek.key.fromMe) {
-      if (budy.includes("://chat.whatsapp.com/")) {
+      if (budy.includes("https://")) {
+        if (isGroupAdmins) return
+        reply("ANTILINK!! LO SENTIMOS NO SE PERMITEN ENLACES HDPTA :V");
+        cnf.groupRemove(from, [sender]);
+      }
+    }
+	  
+    if (isGroup && isAntilink && !mek.key.fromMe) {
+      if (budy.includes(".com")) {
         if (isGroupAdmins) return
         reply("ANTILINK!! LO SENTIMOS NO SE PERMITEN ENLACES HDPTA :V");
         cnf.groupRemove(from, [sender]);
@@ -1214,7 +1222,7 @@ const serialUser = createSerial(18)
 *☂︎ Serial:* ${serialUser}
 *☂ ︎Total:* ${_registered.length} User
 
-*「 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4 」*`
+*「 Siesta_Bot 」*`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
              buttons = [{buttonId: `menu`,buttonText:{displayText: `🌿MENU🌿`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
@@ -1226,7 +1234,7 @@ const serialUser = createSerial(18)
 	    // console.log(e)
             setTimeout( () => {
 			cnf.updatePresence(from, Presence.composing)
-			reply(`*Gracias por registrarse en 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4*`)
+			reply(`*Gracias por registrarse en Siesta_Bot*`)
 		}, 2000)
         break
       
@@ -1283,8 +1291,8 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-        ptod = "51923568749@s.whatsapp.net"
-        dtod = '51923568749'
+        ptod = "50377000817@s.whatsapp.net"
+        dtod = '50377000817'
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
@@ -1436,13 +1444,13 @@ sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, 
 
 break
 case 'creditos':
-   dtod = '51923568749'
+   dtod = '50377000817'
    var yez = `
    [ 𝐶𝑟𝑒𝑑𝑖𝑡𝑜𝑠 ] :
    
  🌿 : wa.me/${dtod.split('@')[0]}
  `
-     credit = cnf.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 1000, "message": `${yez}`, "footerText": "By Confu", "thumbnail": iye, "surface": 'CATALOG'}}, {quoted: mek})
+     credit = cnf.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 1000, "message": `${yez}`, "footerText": "By Robert", "thumbnail": iye, "surface": 'CATALOG'}}, {quoted: mek})
             cnf.relayWAMessage(credit)
         break
 
@@ -1765,11 +1773,11 @@ case 'command':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
  listMsg = {
  buttonText: '𝗟𝗜𝗦𝗧 𝗠𝗘𝗡𝗨',
- footerText: '𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4',
+ footerText: 'Siesta_Bot',
  description: `Hola @${sender.split('@')[0]}, Seleccione el menú aquí`,
  sections: [
                      {
-                      "title": `ConfuBot4`,
+                      "title": `Siesta_Bot`,
  rows: [
                            {
                               "title": "Speed",
@@ -1864,7 +1872,7 @@ menu = `🌿𝘎𝘳𝘶𝘱𝘰 𝘔𝘦𝘯𝘶︎🌿
 
 🌿${prefix}autojoin
 `
-sendButMessage(from, menu, ` 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4`, [
+sendButMessage(from, menu, ` Siesta_Bot`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -1919,7 +1927,7 @@ menu = `シ︎𝘊𝘳𝘦𝘢𝘥𝘰𝘳 𝘔𝘦𝘯𝘶シ︎
 
 🌿${prefix}eval <code>
 `
-sendButMessage(from, menu, `𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4`, [
+sendButMessage(from, menu, `Siesta_Bot`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -1976,7 +1984,7 @@ menu = `🌿𝘔𝘦𝘯𝘶 𝘷𝘢𝘳𝘪𝘢𝘥𝘰🌿
 
 🌿${prefix}playstore <texto>
 `
-sendButMessage(from, menu, ` 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4`, [
+sendButMessage(from, menu, ` Siesta_Bot`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2023,7 +2031,7 @@ menu = `🌿Creador Menu🌿
 
 🌿${prefix}waifu
 `
-sendButMessage(from, menu, ` 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4`, [
+sendButMessage(from, menu, ` Siesta_Bot`, [
           {
             buttonId: `command`,
             buttonText: {
